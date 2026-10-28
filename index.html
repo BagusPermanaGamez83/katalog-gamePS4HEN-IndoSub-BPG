@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Game PS4 HEN Subtitle Indonesia | Bagus Permana Gamez</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #121212; color: #e0e0e0; }
+
+/* HEADER TEMA HITAM PEKAT TOTAL */
+.header { background: #000000; color: white; text-align: center; padding: 35px 15px 35px; border-bottom: 2px solid #b80000; }
+.header .logo-container { margin: 0 auto 15px; max-width: 160px; }
+.header .logo-container img { width: 100%; height: auto; display: block; }
+.header h1 { margin: 0; font-size: 32px; color: #fff; }
+.header .tagline { margin: 10px 0 0; font-size: 15px; font-weight: bold; opacity: .95; letter-spacing: 0.3px; color: #ffffff; }
+.header .main-slogan { margin: 18px 0 0; font-size: clamp(21px, 3vw, 30px); font-weight: 900; color: #fff; text-transform: uppercase; }
+.header .local-slogans { margin: 8px 0 0; line-height: 1.6; }
+.header .local-slogans strong { display: block; color: #ff4545; font-size: 17px; }
+.header .local-slogans span { display: block; color: #f2f2f2; font-weight: bold; font-size: 15px; }
+.header .services-line { margin: 8px 0 0; color: #ddd; font-size: 15px; }
+.info-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
+.info-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 14px; border-radius: 9px; color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; transition: transform .2s, opacity .2s; }
+.info-link:hover { transform: translateY(-2px); opacity: .88; }
+.map-link { background: #2563eb; }
+.phone-link { background: #16a34a; }
+.header .social-links { margin-top: 12px; }
+
+/* CONTAINER */
+.container { max-width: 1250px; margin: auto; padding: 30px 18px 40px; }
+
+/* JUDUL KATALOG */
+.catalog-intro { text-align: center; margin: 0 auto 26px; padding: 22px 18px; background: linear-gradient(135deg, #1d1d1d, #101010); border: 1px solid #333; border-top: 2px solid #b80000; border-radius: 14px; }
+.catalog-intro h2 { margin: 0 0 9px; color: #fff; font-size: 25px; }
+.catalog-intro p { margin: 7px 0; color: #d4d4d4; line-height: 1.6; }
+.catalog-intro .highlight { color: #ff4b4b; font-weight: bold; }
+
+/* GRID */
+.games { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+
+/* CARD TEMA HITAM */
+.card { background: #1e1e1e; border: 1px solid #2d2d2d; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,.5); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; justify-content: space-between; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 8px 22px rgba(184,0,0,.25); border-color: #b80000; }
+
+/* COVER */
+.cover-wrap { position: relative; }
+.cover { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; display: block; background: #2a2a2a; }
+.badge { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; text-align: center; background: rgba(184, 0, 0, .92); color: #fff; padding: 7px 5px; border-radius: 0; font-size: clamp(9px, 1vw, 11px); line-height: 1.3; font-weight: 800; letter-spacing: .45px; box-shadow: 0 -2px 8px rgba(0,0,0,.25); }
+
+/* CONTENT */
+.card-content { padding: 13px; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between; gap: 12px; }
+.game-title { font-size: 14px; line-height: 1.4; color: #fff; }
+
+/* WHATSAPP BUTTON ACCENT */
+.wa-button { display: block; text-align: center; text-decoration: none; background: #16a34a; color: white; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: bold; transition: .2s; box-shadow: 0 2px 6px rgba(22,163,74,.3); }
+.wa-button:hover { background: #12813c; box-shadow: 0 4px 12px rgba(22,163,74,.5); }
+
+/* FOOTER */
+.footer { background: #0a0a0a; color: white; text-align: center; padding: 30px 15px; margin-top: 40px; border-top: 1px solid #2d2d2d; }
+.footer-title { font-size: 20px; font-weight: bold; margin-bottom: 7px; color: #b80000; }
+.footer p { margin: 5px 0; color: #aaa; font-size: 13px; }
+.footer .tagline { color: #fff; font-weight: bold; margin-top: 12px; }
+.footer .main-slogan { color: #fff; font-size: 21px; font-weight: 900; margin: 18px 0 8px; text-transform: uppercase; }
+.footer .local-slogans { margin: 6px 0 12px; line-height: 1.7; }
+.footer .local-slogans strong { display: block; color: #ff4545; font-size: 16px; }
+.footer .local-slogans span { display: block; color: #eee; font-weight: bold; }
+
+/* SOSIAL MEDIA */
+.social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 18px; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; gap: 7px; padding: 10px 15px; border-radius: 9px; color: #fff; text-decoration: none; font-size: 13px; font-weight: bold; transition: transform .2s, opacity .2s; }
+.social-link:hover { transform: translateY(-2px); opacity: .88; }
+.social-youtube { background: #e62117; }
+.social-instagram { background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5); }
+
+/* FLOATING WHATSAPP */
+.floating-wa { position: fixed; right: 18px; bottom: 18px; background: #16a34a; color: white; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 27px; box-shadow: 0 5px 18px rgba(0,0,0,.5); z-index: 100; transition: transform .2s; }
+.floating-wa:hover { transform: scale(1.08); }
+
+/* RESPONSIVE */
+@media (max-width: 1050px) { 
+    .games { grid-template-columns: repeat(4, 1fr); } 
+    .header .logo-container { max-width: 140px; }
+}
+@media (max-width: 700px) {
+    .container { padding: 20px 12px 30px; }
+    .header { padding: 25px 12px; }
+    .header .logo-container { max-width: 120px; }
+    .header h1 { font-size: 27px; }
+    .catalog-intro { padding: 18px 12px; }
+    .catalog-intro h2 { font-size: 21px; }
+    .header .tagline, .header .services-line { font-size: 13px; }
+    .info-link, .social-link { font-size: 12px; padding: 9px 11px; }
+    .games { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .card-content { padding: 10px; }
+    .game-title { font-size: 12px; }
+    .wa-button { font-size: 12px; padding: 9px 5px; }
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Rozy Games Logo" onerror="this.style.display='none';">
+    </div>
+    <h1>Bagus Permana Gamez</h1>
+    <p class="services-line">Spesialis Isi Game PS3, PS4 HEN, PS5 HEN &amp; Servis PlayStation</p>
+    <p class="main-slogan">Terlengkap SE-NKRI!</p>
+    <div class="local-slogans"><strong>Disinilah Pusat!</strong><span>GUDANG nya GAMES PLAYSTATION!</span></div>
+    <p class="tagline">Game Terupdate Sejabodetabek • Terlengkap Se-NKRI</p>
+    <div class="info-links" aria-label="Lokasi dan WhatsApp Bagus Permana Gamez">
+        <a class="info-link map-link" href="https://maps.app.goo.gl/jC767JUGhTz8vXTr7" target="_blank" rel="noopener noreferrer">📍 Google Maps — Bagus Permana Gamez | Setu - Bekasi</a>
+        <a class="info-link phone-link" href="https://wa.me/6287804168161" target="_blank" rel="noopener noreferrer">☏ WhatsApp 0878 0416 8161</a>
+    </div>
+    <div class="social-links" aria-label="Sosial media Bagus Permana Gamez">
+        <a class="social-link social-youtube" href="https://www.youtube.com/@baguspermanagamez" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+        <a class="social-link social-instagram" href="https://www.instagram.com/baguspermanagamez/" target="_blank" rel="noopener noreferrer">◎ Instagram</a>
+    </div>
+</header>
+
+<main class="container">
+    <section class="catalog-intro" aria-labelledby="catalog-title">
+        <h2 id="catalog-title">🎮 Katalog Game PS4 HEN</h2>
+        <p class="highlight">Banyak Pilihan Game Seru, Subtitle Indonesia!</p>
+        <p><strong>Game Favorit, Nggak Perlu Ribet!</strong></p>
+        <p>Cari game yang kamu mau, klik tombol WhatsApp pada game pilihanmu, dan konsultasikan kebutuhan isi game PS4 HEN bersama Bagus Permana Gamez, SETU - Kab Bekasi.</p>
+    </section>
+    <div class="games" id="games"></div>
+</main>
+
+<footer class="footer">
+    <div class="footer-title">Bagus Permana Gamez</div>
+    <p>Spesialis Isi Game PS3, PS4 HEN, PS5 HEN &amp; Servis PlayStation</p>
+    <p class="main-slogan">Cari Game? BAGUS PERMANA GAMEZ Aja!</p>
+    <div class="local-slogans"><strong>RATUSAN RIBU JUDUL GAME PLAYSTATION</strong><span>LAST UPDATE+FULL DLC</span></div>
+    <p class="tagline">Game Terupdate Sejabodetabek • Terlengkap Se-NKRI</p>
+    <div class="info-links" aria-label="Lokasi dan WhatsApp Bagus Permana Gamez">
+        <a class="info-link map-link" href="https://maps.app.goo.gl/BARKwvVGoaogVjmR8" target="_blank" rel="noopener noreferrer">📍 Google Maps — SETU - BEKASI </a>
+        <a class="info-link phone-link" href="https://wa.me/6287804168161" target="_blank" rel="noopener noreferrer">☏ WhatsApp 6287804168161</a>
+    </div>
+    <div class="social-links" aria-label="Sosial media Bagus Permana Gamez">
+        <a class="social-link social-youtube" href="http://bit.ly/YoutubeBagusPermanaGamez" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+        <a class="social-link social-instagram" href="https://www.instagram.com/baguspermanagamez/" target="_blank" rel="noopener noreferrer">◎ Instagram</a>
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="floating-wa" href="https://wa.me/6287804168161" target="_blank" title="WhatsApp Bagus Permana Gamez">💬</a>
+
+<script>
+const games = [
+    ["A Plague Tale Innocence", "A Plague Tale Innocence.jpg"],
+    ["A Way Out", "A Way Out.jpg"],
+    ["Afterimage", "Afterimage.jpg"],
+    ["Assassin's Creed III Remastered", "Assassin's Creed III Remastered.jpg"],
+    ["Assassin's Creed IV Black Flag Gold Edition", "Assassin's Creed IV Black Flag Gold Edition.jpg"],
+    ["Assassin's Creed ORIGINS", "Assassin's Creed ORIGINS.jpg"],
+    ["Assassin's Creed Syndicate", "Assassin's Creed Syndicate.jpg"],
+    ["Assassin's Creed The Ezio Collection", "Assassin's Creed The Ezio Collection.jpg"],
+    ["Assassin's Creed Unity", "Assassin's Creed Unity.jpg"],
+    ["Assassins Creed Odyssey Ultimate Edition", "Assassins Creed Odyssey Ultimate Edition.jpg"],
+    ["Assassins Creed Valhalla Ultimate Edition", "Assassins Creed Valhalla Ultimate Edition.jpg"],
+    ["Assassin's Creed Miragen", "Assassin's Creed Mirage.jpg"],
+    ["Bayonetta", "Bayonetta.jpg"],
+    ["Bloodborne Game of The Year Edition", "Bloodborne Game of The Year Edition.jpg"],
+    ["Control Ultimate Edition", "Control Ultimate Edition.jpg"],
+	["Crisis 1 Remastered", "Crisis 1 Remastered.jpg"],
+	["Crisis 2 Remastered", "Crisis 2 Remastered.jpg"],
+    ["Cyberpunk 2077", "Cyberpunk 2077.jpg"],
+    ["Dead Island 2 Gold Edition", "Dead Island 2 Gold Edition.jpg"],
+    ["Days Gone", "Days Gone.jpg"],
+    ["Death's Door", "Death's Door.jpg"],
+    ["Death Stranding", "Death Stranding.jpg"],
+    ["Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles", "Demon Slayer Kimetsu no Yaiba The Hinokami Chronicles.jpg"],
+    ["Detroit Become Human", "Detroit Become Human.jpg"],
+    ["Devil May Cry 5 Deluxe Edition", "Devil May Cry 5 Deluxe Edition.jpg"],
+    ["Dragonball Z Kakarot Ultimate Edition", "Dragonball Z Kakarot Ultimate Edition.jpg"],
+    ["Elden Ring Shadow of the Erdtree", "Elden Ring Shadow of the Erdtree.jpg"],
+    ["Ender Lilies Quietus of The Knights", "Ender Lilies Quietus of The Knights.jpg"],
+    ["Evil West", "Evil West.jpg"],
+    ["Fatal Frame Maiden of Black Water", "Fatal Frame Maiden of Black Water.jpg"],
+    ["Fatal Frame Mask of The Lunar Eclipse", "Fatal Frame Mask of The Lunar Eclipse.jpg"],
+    ["Ghost of Tsushima Directors Cut", "Ghost of Tsushima Directors Cut.jpg"],
+    ["God Of War 2018", "God Of War 2018.jpg"],
+    ["God Of War 3 Remastered", "God Of War 3 Remastered.jpg"],
+    ["God Of War Ragnarok", "God Of War Ragnarok.jpg"],
+    ["Grand Theft Auto III The Definitive Edition", "Grand Theft Auto III The Definitive Edition.jpg"],
+    ["Grand Theft Auto San Andreas The Definitive Edition", "Grand Theft Auto San Andreas The Definitive Edition.jpg"],
+    ["Grand Theft Auto V", "Grand Theft Auto V.jpg"],
+    ["Grand Theft Auto Vice City The Definitive Edition", "Grand Theft Auto Vice City The Definitive Edition.jpg"],
+    ["Green Hell", "Green Hell.jpg"],
+    ["Harvest Moon A Wonderful Life Special Edition", "Harvest Moon A Wonderful Life Special Edition.jpg"],
+	["Harvest Moon Save the Homeland", "Harvest Moon Save the Homeland.jpg"],
+    ["Hogwarts Legacy", "Hogwarts Legacy.jpg"],
+    ["Horizon Zero Dawn Complete Edition", "Horizon Zero Dawn Complete Edition.jpg"],
+    ["Immortal Fenyx Rising", "Immortal Fenyx Rising.jpg"],
+    ["Infamous Second Son", "Infamous Second Son.jpg"],
+    ["It Takes Two", "It Takes Two.jpg"],
+    ["Judgment", "Judgment.jpg"],
+    ["Kamen Rider Memory Of Heroez", "Kamen Rider Memory Of Heroez.jpg"],
+    ["Kena Bridge of Spirits", "Kena Bridge of Spirits.jpg"],
+    ["Kingdom Come Deliverance Royal Edition", "Kingdom Come Deliverance Royal Edition.jpg"],
+    ["LEGO City Undercover", "LEGO City Undercover.jpg"],
+    ["Lies of P", "Lies of P.jpg"],
+    ["Life is Strange Remastered", "Life is Strange Remastered.jpg"],
+    ["Like A Dragon Gaiden The Man Who Erased His Name", "Like A Dragon Gaiden The Man Who Erased His Name.jpg"],
+    ["Like A Dragon Infinite Wealth Ultimate Edition", "Like A Dragon Infinite Wealth Ultimate Edition.jpg"],
+    ["Like A Dragon Pirate Yakuza in Hawaii Digital Deluxe Edition", "Like A Dragon Pirate Yakuza in Hawaii Digital Deluxe Edition.jpg"],
+    ["Little Nightmares 3 Deluxe Edition", "Little Nightmares 3 Deluxe Edition.jpg"],
+    ["Mafia I Definitive Edition", "Mafia I Definitive Edition.jpg"],
+    ["Mafia II Definitive Edition", "Mafia II Definitive Edition.jpg"],
+    ["Mafia III Definitive Edition", "Mafia III Definitive Edition.jpg"],
+    ["Marvel Spiderman", "Marvel Spiderman.jpg"],
+    ["Marvels Spider Man Miles Morales", "Marvels Spider Man Miles Morales.jpg"],
+    ["Mortal Kombat 11 Ultimate Editon", "Mortal Kombat 11 Ultimate Editon.jpg"],
+    ["MOTOGP24", "MOTOGP24.jpg"],
+    ["MOTOGP25", "MOTOGP25.jpg"],
+    ["Naruto X Boruto Ultimate Ninja Storm Connection", "Naruto X Boruto Ultimate Ninja Storm Connection.jpg"],
+    ["NieR Automata Game of The YoRHa Edition", "NieR Automata Game of The YoRHa Edition.jpg"],
+    ["ONE PIECE ODYSSEY", "ONE PIECE ODYSSEY.jpg"],
+    ["Onimusha Warlords", "Onimusha Warlords.jpg"],
+    ["Onimusha 2 Samurai Destiny", "Onimusha 2 Samurai Destiny.jpg"],
+    ["P.T. (Silent Hills)", "P.T. (Silent Hills).jpg"],
+    ["Persona 3 Portable", "Persona 3 Portable.jpg"],
+	["Persona 3 Reload Digital Premium Edition", "Persona 3 Reload Digital Premium Edition.jpg"],
+    ["Persona 5 Royal", "Persona 5 Royal.jpg"],
+    ["Resident Evil 2 Remake", "Resident Evil 2 Remake.jpg"],
+    ["Resident Evil 3 Remake", "Resident Evil 3 Remake.jpg"],
+    ["Resident Evil 4 Remake", "Resident Evil 4 Remake.jpg"],
+    ["Resident Evil 5", "Resident Evil 5.jpg"],
+    ["Resident Evil 6", "Resident Evil 6.jpg"],
+    ["Resident Evil 7 Biohazard ", "Resident Evil 7 Biohazard .jpg"],
+    ["Resident Evil 8 Village", "Resident Evil 8 Village.jpg"],
+    ["Rock Band 4 Indonesia Song's", "Rock Band 4 Indonesia Song's.jpg"],
+    ["Sekiro Shadows Die Twice G.O.T.Y", "Sekiro Shadows Die Twice G.O.T.Y.jpg"],
+    ["Sengoku Basara 4 Sumeragi", "Sengoku Basara 4 Sumeragi.jpg"],
+    ["SIFU", "SIFU.jpg"],
+    ["Sleeping Dogs™ Definitive Edition", "Sleeping Dogs™ Definitive Edition.jpg"],
+    ["SpongeBob SquarePants The Cosmic Shake", "SpongeBob SquarePants The Cosmic Shake.jpg"],
+    ["Spongebob Squarepants Battle 4 Bikini Bottom Rehydrated", "Spongebob Squarepants Battle 4 Bikini Bottom Rehydrated.jpg"],
+    ["Star Wars Jedi Fallen Order Deluxe Edition", "Star Wars Jedi Fallen Order Deluxe Edition.jpg"],
+    ["Star Wars Jedi Survivor", "Star Wars Jedi Survivor.jpg"],
+    ["STRAY", "STRAY.jpg"],
+    ["The Callisto Protocol", "The Callisto Protocol.jpg"],
+    ["The Dark Pictures Man of Medan", "The Dark Pictures Man of Medan.jpg"],
+    ["The Evil Within 2", "The Evil Within 2.jpg"],
+    ["The Last of Us Remastered", "The Last of Us Remastered.jpg"],
+    ["The Last of Us Part II", "The Last of Us Part II.jpg"],
+    ["The Witcher 3 Wild Hunt G.O.T.Y", "The Witcher 3 Wild Hunt G.O.T.Y.jpg"],
+    ["Tom Clancys Ghost Recon Wildlands Ultimate Edition", "Tom Clancys Ghost Recon Wildlands Ultimate Edition.jpg"],
+    ["Tomb Raider I II III Remastered Starring Lara Croft", "Tomb Raider I II III Remastered Starring Lara Croft.jpg"],
+    ["Ultra Age", "Ultra Age.jpg"],
+    ["Uncharted 4 A Thiefs End", "Uncharted 4 A Thiefs End.jpg"],
+    ["Uncharted Lost Legacy", "Uncharted Lost Legacy.jpg"],
+    ["Uncharted The Nathan Drake Collection", "Uncharted The Nathan Drake Collection.jpg"],
+    ["UPIN IPIN UNIVERSE", "UPIN IPIN UNIVERSE.jpg"],
+    ["Visage", "Visage.jpg"],
+    ["Watch Dogs Complete Edition", "Watch Dogs Complete Edition.jpg"],
+    ["Watch Dogs 2 Gold Edition", "Watch Dogs 2 Gold Edition.jpg"],
+    ["Wo Long Fallen Dynasty", "Wo Long Fallen Dynasty.jpg"],
+    ["Yakuza Kiwami 3 and Dark Ties Deluxe Edition", "Yakuza Kiwami 3 and Dark Ties Deluxe Edition.jpg"],
+    ["Yakuza Like A Dragon", "Yakuza Like A Dragon.jpg"],
+    ["HEI ANTEK ANTEK ASING", "HEI ANTEK ANTEK ASING.jpg"],
+    ["LONDO IRENG", "LONDO IRENG.jpg"],
+    ["YNTKTS", "YNTKTS.jpg"]
+];
+
+const gamesContainer = document.getElementById("games");
+
+function renderGames() {
+    gamesContainer.innerHTML = "";
+
+    games.forEach(game => {
+        const namaGame = game[0];
+        const fileGambar = game[1];
+        
+        const textPesan = encodeURIComponent("Halo Bagus Permana Gamez, saya mau tanya game PS4 HEN Subtitle Indonesia: " + namaGame);
+        const cardLink = "https://wa.me/6287804168161?text=" + textPesan;
+
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+            <div class="cover-wrap">
+                <img class="cover" src="covers/${encodeURIComponent(fileGambar).replace(/%2F/g, '/')}" alt="${namaGame}" onerror="this.onerror=null; this.src='https://placehold.co/400x600/222222/ffffff?text=Cover+Belum+Ada';">
+                <span class="badge">SUBTITLE INDONESIA</span>
+            </div>
+            <div class="card-content">
+                <strong class="game-title">${namaGame}</strong>
+                <a href="${cardLink}" target="_blank" rel="noopener noreferrer" class="wa-button">Order via WA</a>
+            </div>
+        `;
+        gamesContainer.appendChild(card);
+    });
+}
+
+renderGames();
+</script>
+</body>
+</html>
